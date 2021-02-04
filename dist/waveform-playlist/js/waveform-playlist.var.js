@@ -5990,7 +5990,7 @@ var WaveformPlaylist =
 	      var endX = (0, _conversions.secondsToPixels)(this.endTime, data.resolution, data.sampleRate);
 	      var progressWidth = 0;
 	      var numChan = this.peaks.data.length;
-	      var scale = window.devicePixelRatio;
+	      var scale = 1;
 	
 	      if (playbackX > 0 && playbackX > startX) {
 	        if (playbackX < endX) {
